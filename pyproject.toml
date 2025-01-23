@@ -1,2 +1,34 @@
+[project]
+name = "pagan"
+version = "0.4.4"
+authors = [{ name = "David Bothe", email = "davbothe@googlemail.com" }]
+license = {file = "LICENSE"}
+description = "python avatar generator for absolute nerds"
+keywords = ["avatar, identicon, generator"]
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Environment :: Web Environment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+]
+
+[tool.setuptools]
+packages = ["pagan"]
+
+[project.urls]
+"Homepage" = "https://github.com/daboth/pagan"
+"Download" = "https://github.com/daboth/pagan/tarball/0.4.4"
+
 [build-system]
-requires = ["setuptools<58", "wheel"]
+requires = [
+    "setuptools",
+    "Pillow>=2.3.0",
+]
+
+[project.scripts]
+pagan = "pagan:main"
