@@ -55,3 +55,7 @@ target/
 
 #PyCharm
 .idea/
+
+# Local autoenv
+.env
+.env.leave
